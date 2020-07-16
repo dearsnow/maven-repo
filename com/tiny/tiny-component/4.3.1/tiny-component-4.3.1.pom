@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tiny-site</artifactId>
+        <groupId>com.tiny</groupId>
+        <version>4.3.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+	
+    <artifactId>tiny-component</artifactId>
+	
+	<description> 功能组件</description>
+	
+	<properties>
+        <aliyun.dysmsapi.version>1.1.0</aliyun.dysmsapi.version>
+        <aliyun.core.version>4.0.6</aliyun.core.version>
+        <qiniu.java.sdk.version>7.2.11</qiniu.java.sdk.version>
+        <easypoi.version>1.1.2-beat1</easypoi.version>
+        <zxing.version>3.2.1</zxing.version>
+    </properties>
+
+    <dependencies>
+		
+		<!-- 工具类 -->
+		<dependency>
+			<groupId>com.tiny</groupId>
+			<artifactId>tiny-common</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- 阿里云sdk -->
+        <!-- 短信 -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+            <version>${aliyun.dysmsapi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>${aliyun.core.version}</version>
+        </dependency>
+        <!-- 阿里云sdk end -->
+        
+        <!--七牛服务器 -->
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>${qiniu.java.sdk.version}</version>
+        </dependency>
+        
+        <!-- 文档-pdf -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>${easypoi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-asian</artifactId>
+            <version>5.2.0</version>
+        </dependency>
+        
+        <!-- 二维码工具-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>${zxing.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>${zxing.version}</version>
+        </dependency>
+		
+    </dependencies>
+  
+</project>
